@@ -1,0 +1,536 @@
+{
+  "theme": "light",
+  "categories": [
+    {
+      "key": "necklace",
+      "name": "Necklace",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/3_jojgit.jpg",
+      "anchor": "category-necklace",
+      "subtitle": "Delicate elegance for every moment",
+      "story": "Each necklace is handcrafted in 92.5 silver, finished with a lustrous 22K gold polish."
+    },
+    {
+      "key": "pendant",
+      "name": "Pendant",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435933/3_yfwmof.jpg",
+      "anchor": "category-pendant",
+      "subtitle": "Wear your story close to your heart",
+      "story": "Intricate pendant designs in 92.5 silver — light enough for daily wear, beautiful enough for every occasion."
+    },
+    {
+      "key": "earrings",
+      "name": "Earrings",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436015/4_oraphj.jpg",
+      "anchor": "category-earrings",
+      "subtitle": "Frame your face in gold",
+      "story": "From subtle drops to statement chandbalis — all crafted in 92.5 silver with 22K gold polish."
+    },
+    {
+      "key": "bangles",
+      "name": "Bangles",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436101/5_q0feix.jpg",
+      "anchor": "category-bangles",
+      "subtitle": "Grace in every gesture",
+      "story": "Timeless bangle designs in 92.5 silver, inspired by South Indian heritage and temple traditions."
+    },
+    {
+      "key": "jhumkas",
+      "name": "Jhumkas",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436168/5_qfql95.jpg",
+      "anchor": "category-jhumkas",
+      "subtitle": "The jhumka — India's most beloved earring",
+      "story": "Handcrafted jhumkas in 92.5 silver with 22K gold polish. Lightweight, elegant, and deeply rooted in tradition."
+    },
+    {
+      "key": "sets",
+      "name": "Sets",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436349/1_opdu5x.jpg",
+      "anchor": "category-sets",
+      "subtitle": "Complete the look, effortlessly",
+      "story": "Curated matching sets in 92.5 silver — designed to complement each other perfectly."
+    }
+  ],
+  "top_sellers": [
+    {
+      "id": "ts1",
+      "name": "Temple Coin Necklace",
+      "category": "Necklace",
+      "price": 2500,
+      "description": "92.5 silver with 22K gold polish. Traditional coin motifs on black thread.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773263394/1_lhmo8e.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Temple%20Coin%20Necklace%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?",
+      "badge": "hot"
+    },
+    {
+      "id": "ts2",
+      "name": "Lakshmi Pendant Set",
+      "category": "Earrings",
+      "description": "Intricate Lakshmi pendant in 92.5 silver with gold polish & ruby accents.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773263396/2_yx2iae.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Lakshmi%20Pendant%20Set%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?",
+      "scarcity": "Only 3 left"
+    },
+    {
+      "id": "ts3",
+      "name": "Jhumka Earrings",
+      "category": "Necklace",
+      "description": "Antique gold-finish jhumkas with pearl drops. Lightweight for all-day wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773263398/3_lxwxat.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Jhumka%20Earrings%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?",
+      "badge": "limited"
+    },
+    {
+      "id": "ts4",
+      "name": "Jhumka Earrings",
+      "category": "Earrings",
+      "description": "Antique gold-finish jhumkas with pearl drops. Lightweight for all-day wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773377677/4_ituvje.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Jhumka%20Earrings%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    },
+    {
+      "id": "ts5",
+      "name": "Jhumka Earrings",
+      "category": "Earrings",
+      "description": "Antique gold-finish jhumkas with pearl drops. Lightweight for all-day wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773377676/5_wiskac.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Jhumka%20Earrings%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    },
+    {
+      "id": "ts6",
+      "name": "Jhumka Earrings",
+      "category": "Jhumkas",
+      "description": "Antique gold-finish jhumkas with pearl drops. Lightweight for all-day wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773377676/6_dqnw48.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Jhumka%20Earrings%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    }
+  ],
+  "new_collection": [
+    {
+      "id": "nc1",
+      "name": "Lotus Haaram",
+      "category": "Necklace",
+      "description": "Long haaram with lotus motifs, natural pearls, and 22K gold polish finish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259203/1_j9qd70.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Lotus%20Haaram%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?",
+      "badge": "new"
+    },
+    {
+      "id": "nc2",
+      "name": "Peacock Vanki",
+      "category": "Sets",
+      "description": "Statement arm vanki with peacock design, emerald & ruby stones in gold polish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259204/2_bbkj6w.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Peacock%20Vanki%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?",
+      "badge": "new"
+    },
+    {
+      "id": "nc3",
+      "name": "Kundan Maang Tikka",
+      "category": "Bangles",
+      "description": "Elegant kundan maang tikka with delicate gold chain and floral centre.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259206/3_wltwhi.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Kundan%20Maang%20Tikka%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    },
+    {
+      "id": "nc4",
+      "name": "Kundan Maang Tikka",
+      "category": "Bangles",
+      "description": "Elegant kundan maang tikka with delicate gold chain and floral centre.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259206/3_wltwhi.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Kundan%20Maang%20Tikka%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    },
+    {
+      "id": "nc5",
+      "name": "Kundan Maang Tikka",
+      "category": "Pendant",
+      "description": "Elegant kundan maang tikka with delicate gold chain and floral centre.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259206/3_wltwhi.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Kundan%20Maang%20Tikka%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    },
+    {
+      "id": "nc6",
+      "name": "Maang 6",
+      "category": "Pendant",
+      "description": "Elegant kundan maang tikka with delicate gold chain and floral centre.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773259206/3_wltwhi.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "whatsapp": "https://wa.me/918919359961?text=Hi!%20I'm%20interested%20in%20the%20Kundan%20Maang%20Tikka%20%F0%9F%A4%A9%20Can%20you%20share%20more%20details?"
+    }
+  ],
+  "necklace": [
+    {
+      "id": "nl1",
+      "name": "Temple Coin Necklace",
+      "category": "Necklace",
+      "description": "Handcrafted 92.5 silver with 22K gold polish. Traditional temple coin design.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/1_prnad2.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/1_prnad2.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773553062/1.1_ksy0ds.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773553086/1.2_cgqr83.jpg"
+      ],
+      "price": 2500
+    },
+    {
+      "id": "nl2",
+      "name": "Guttapusalu Haram",
+      "category": "Necklace",
+      "description": "Traditional South Indian beaded necklace with 92.5 silver and 22K gold polish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/2_hldabi.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/2_hldabi.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589616/2.1_zi0dj9.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589620/2.2_nsmqiw.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589624/2.3_g9f20m.jpg"
+      ],
+      "price": 4200
+    },
+    {
+      "id": "nl3",
+      "name": "Guttapusalu Haram",
+      "category": "Necklace",
+      "description": "Traditional South Indian beaded necklace with 92.5 silver and 22K gold polish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/3_jojgit.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/3_jojgit.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589628/3.1_o5oknn.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589631/3.2_iawid6.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589635/3.3_w3b732.jpg"
+      ],
+      "price": 4200
+    },
+    {
+      "id": "nl4",
+      "name": "Guttapusalu Haram",
+      "category": "Necklace",
+      "description": "Traditional South Indian beaded necklace with 92.5 silver and 22K gold polish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/4_cvwv20.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/4_cvwv20.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589639/4.1_g36i9e.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589643/4.2_sbys7u.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589646/4.3_wk3kph.jpg"
+      ],
+      "price": 5000
+    },
+    {
+      "id": "nl5",
+      "name": "Guttapusalu Haram",
+      "category": "Necklace",
+      "description": "Traditional South Indian beaded necklace with 92.5 silver and 22K gold polish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/5_bauirw.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435815/5_bauirw.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589748/5.1_hstfnb.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589752/5.2_sqebsy.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773589757/5.3_qhrbxd.jpg"
+      ],
+      "price": 0
+    }
+  ],
+  "pendant": [
+    {
+      "id": "pd1",
+      "name": "Peacock Pendant Set",
+      "category": "Pendant",
+      "description": "Stunning peacock motif pendant with matching earrings. Vivid enamel and 22K finish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435934/1_mbatbv.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 3100
+    },
+    {
+      "id": "pd2",
+      "name": "Peacock Pendant Set",
+      "category": "Pendant",
+      "description": "Stunning peacock motif pendant with matching earrings. Vivid enamel and 22K finish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435934/2_e8ts69.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "pd3",
+      "name": "Peacock Pendant Set",
+      "category": "Pendant",
+      "description": "Stunning peacock motif pendant with matching earrings. Vivid enamel and 22K finish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435933/3_yfwmof.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "pd4",
+      "name": "Peacock Pendant Set",
+      "category": "Pendant",
+      "description": "Stunning peacock motif pendant with matching earrings. Vivid enamel and 22K finish.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773435933/4_swoe3l.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "earrings": [
+    {
+      "id": "er1",
+      "name": "Ruby Chandbali Earrings",
+      "category": "Earrings",
+      "description": "Classic chandbali design with ruby-coloured stone accents and delicate filigree work.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436021/1_ipb025.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436021/1_ipb025.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588639/1.1_u09uai.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436021/1_ipb025.jpg"
+      ],
+      "price": 1650
+    },
+    {
+      "id": "er2",
+      "name": "Ruby Chandbali Earrings",
+      "category": "Earrings",
+      "description": "Classic chandbali design with ruby-coloured stone accents and delicate filigree work.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436020/2_v7ftob.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "er3",
+      "name": "Ruby Chandbali Earrings",
+      "category": "Earrings",
+      "description": "Classic chandbali design with ruby-coloured stone accents and delicate filigree work.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436020/3_s1mmup.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "bangles": [
+    {
+      "id": "bg1",
+      "name": "Floral Vanki Bangle",
+      "category": "Bangles",
+      "description": "Elegant floral design bangle. Lightweight and perfect for everyday and festive wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436108/1_u8ljv9.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436108/1_u8ljv9.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588586/2.1_fqztjv.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436108/1_u8ljv9.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588590/2.2_gup3cv.jpg"
+      ],
+      "price": 1200
+    },
+    {
+      "id": "bg2",
+      "name": "Floral Vanki Bangle",
+      "category": "Bangles",
+      "description": "Elegant floral design bangle. Lightweight and perfect for everyday and festive wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436107/2_jy3eix.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436107/2_jy3eix.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588575/1.1_p7unei.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436107/2_jy3eix.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588578/1.2_yz5wvn.jpg"
+      ],
+      "price": 1200
+    },
+    {
+      "id": "bg3",
+      "name": "Floral Vanki Bangle",
+      "category": "Bangles",
+      "description": "Elegant floral design bangle. Lightweight and perfect for everyday and festive wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436106/3_qymdjr.jpg",
+      "images": [
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436106/3_qymdjr.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588598/3.1_bnhahm.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436106/3_qymdjr.jpg",
+        "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773588603/3.2_cfrxvk.jpg"
+      ],
+      "price": 1200
+    }
+  ],
+  "jhumkas": [
+    {
+      "id": "jh1",
+      "name": "Lakshmi Jhumka Set",
+      "category": "Jhumkas",
+      "description": "Goddess Lakshmi motif jhumkas with pearl drops. Beloved by brides and festive wearers.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436179/1_yjf6rv.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 1800
+    },
+    {
+      "id": "jh2",
+      "name": "Pearl Drop Jhumka",
+      "category": "Jhumkas",
+      "description": "Delicate jhumkas with freshwater pearl drops. Light-weight and perfect for daily wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436177/2_skq8p9.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 0
+    },
+    {
+      "id": "jh3",
+      "name": "Pearl Drop Jhumka",
+      "category": "Jhumkas",
+      "description": "Delicate jhumkas with freshwater pearl drops. Light-weight and perfect for daily wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436177/2_skq8p9.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 0
+    },
+    {
+      "id": "jh4",
+      "name": "Pearl Drop Jhumka",
+      "category": "Jhumkas",
+      "description": "Delicate jhumkas with freshwater pearl drops. Light-weight and perfect for daily wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436169/4_aanvyw.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 0
+    }
+  ],
+  "sets": [
+    {
+      "id": "st1",
+      "name": "Jhumka Set",
+      "category": "Sets",
+      "description": "Goddess Lakshmi motif jhumkas with pearl drops. Beloved by brides and festive wearers.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436349/1_opdu5x.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 1800
+    },
+    {
+      "id": "st2",
+      "name": "Pearl Drop set",
+      "category": "Jhumkas",
+      "description": "Delicate jhumkas with freshwater pearl drops. Light-weight and perfect for daily wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436347/2_uk5do9.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 0
+    },
+    {
+      "id": "st3",
+      "name": "Pearl Drop set",
+      "category": "Jhumkas",
+      "description": "Delicate jhumkas with freshwater pearl drops. Light-weight and perfect for daily wear.",
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436346/3_ieezjw.jpg",
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "price": 0
+    }
+  ],
+  "reviews": [
+    {
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773450768/1_axdkx6.jpg"
+    },
+    {
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773450766/2_jiwokh.jpg"
+    },
+    {
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773450763/3_ssaxsz.jpg"
+    },
+    {
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773450761/4_kakyrt.jpg"
+    },
+    {
+      "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773450878/5_qiphsv.jpg"
+    }
+  ]
+}
