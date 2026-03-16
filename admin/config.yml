@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "data"
+    label: "Store Content"
+    delete: false # Prevents accidental deletion of the main data file
+    files:
+      - name: "products"
+        label: "Product Catalog"
+        file: "data/products.json"
+        fields:
+          - { label: "Theme", name: "theme", widget: "select", options: ["light", "dark"] }
+          
+          # Categories Section
+          - name: "categories"
+            label: "Main Categories"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Key", name: "key", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Story", name: "story", widget: "text" }
+
+          # Top Sellers Section
+          - name: "top_sellers"
+            label: "Top Sellers"
+            widget: "list"
+            fields: &product_fields
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Badge", name: "badge", widget: "select", options: ["none", "hot", "new", "limited"], default: "none", required: false }
+              - { label: "Scarcity Hint", name: "scarcity", widget: "string", required: false }
+
+          # New Collection Section
+          - name: "new_collection"
+            label: "New Arrivals"
+            widget: "list"
+            fields: *product_fields
+
+          # Individual Category Lists (Necklaces, Bangles, etc.)
+          - name: "necklace"
+            label: "Necklaces List"
+            widget: "list"
+            fields: *product_fields
+
+          - name: "pendant"
+            label: "Pendants List"
+            widget: "list"
+            fields: *product_fields
+
+          - name: "earrings"
+            label: "Earrings List"
+            widget: "list"
+            fields: *product_fields
+
+          - name: "bangles"
+            label: "Bangles List"
+            widget: "list"
+            fields: *product_fields
+
+          - name: "jhumkas"
+            label: "Jhumkas List"
+            widget: "list"
+            fields: *product_fields
+
+          # Customer Reviews
+          - name: "reviews"
+            label: "Customer Reviews"
+            widget: "list"
+            fields:
+              - { label: "Review Image", name: "image", widget: "image" }
