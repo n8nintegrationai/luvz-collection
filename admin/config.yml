@@ -1,5 +1,14 @@
+# # Add this line at the very top
+# local_backend: true
+
+# backend:
+#   name: proxy
+#   proxy_url: http://localhost:8081/api/v1
+#   branch: main
+
 backend:
   name: git-gateway
+  repo: n8nintegrationai/luvz-collection
   branch: main
 
 media_folder: "images"
@@ -14,9 +23,9 @@ collections:
         label: "Product Catalog"
         file: "data/products.json"
         fields:
-          - { label: "Theme", name: "theme", widget: "select", options: ["light", "dark"] }
+          - { label: "Theme", name: "theme", widget: "select", options: ["light", "dark","earth"], default: "earth" }
           
-          # Categories Section
+          # Categories Section (matches 'categories' array in data/products.json)
           - name: "categories"
             label: "Main Categories"
             widget: "list"
@@ -24,10 +33,11 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Key", name: "key", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
+              - { label: "Anchor ID", name: "anchor", widget: "string", required: false, hint: "Optional: section anchor like category-necklace" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "Story", name: "story", widget: "text" }
 
-          # Top Sellers Section
+          # Shared product fields (used by top_sellers, new_collection, and each category array)
           - name: "top_sellers"
             label: "Top Sellers"
             widget: "list"
@@ -35,11 +45,18 @@ collections:
               - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Price", name: "price", widget: "number" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Price (₹)", name: "price", widget: "number", required: false, hint: "Leave empty if you don't want to show price" }
+              - { label: "Main Image", name: "image", widget: "image" }
+              - label: "Gallery Images"
+                name: "images"
+                widget: "list"
+                required: false
+                field: { label: "Image", name: "image", widget: "image",required: false }
+                hint: "Optional: additional images for the product modal gallery"
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Badge", name: "badge", widget: "select", options: ["none", "hot", "new", "limited"], default: "none", required: false }
-              - { label: "Scarcity Hint", name: "scarcity", widget: "string", required: false }
+              - { label: "WhatsApp Link (optional)", name: "whatsapp", widget: "string", required: false, hint: "If empty, the site auto-builds the link from the product name" }
+              - { label: "Badge", name: "badge", widget: "select", options: ["hot", "new", "limited", "soldout"], required: false }
+              - { label: "Scarcity Hint", name: "scarcity", widget: "string", required: false, hint: "e.g. 'Only 3 left'" }
 
           # New Collection Section
           - name: "new_collection"

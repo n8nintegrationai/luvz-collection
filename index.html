@@ -16,7 +16,7 @@
   <meta property="og:description"
     content="Handcrafted 92.5 silver jewelry finished with 22 carat gold polish. Necklaces, bangles, jhumkas & more. Shop now or enquire on WhatsApp." />
   <meta property="og:image" content="images/logo_gif.gif" />
-  <meta property="og:url" content="https://luvzcollection.com" />
+  <meta property="og:url" content="https://luvzcollection.in" />
   <meta property="og:site_name" content="LUVZ Collection" />
   <!-- Twitter/X card -->
   <meta name="twitter:card" content="summary" />
@@ -29,6 +29,9 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Crimson+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap"
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <script>tailwind.config = { theme: { extend: { fontFamily: { display: ['Cinzel', 'serif'], body: ['Cormorant Garamond', 'serif'], fine: ['Crimson Pro', 'serif'] } } } }</script>
   <style>
     /* ═══════════════════ THEMES ═══════════════════ */
@@ -3092,7 +3095,7 @@
     </div>
   </section>
 
-  <!-- CATEGORY SECTIONS (dynamically populated from JSONBin) -->
+  <!-- CATEGORY SECTIONS (dynamically populated from /data/products.json) -->
   <section id="category-necklace" class="sec reveal">
     <div style="max-width:1360px;margin:0 auto">
       <div class="sec-head">
@@ -3476,8 +3479,7 @@
   <script>
     // ╔══════════════════════════════════════╗
     // ║   ✦  LUVZ COLLECTION — CONFIG   ✦   ║
-    const BIN_ID = '69b1d22ab7ec241ddc5e9a5c';
-    const READ_KEY = '$2a$10$WRUdZyGocTbFR7bArgDGU.eIvtdO96Vzo4Jn7L37lUZBB22tjbx2q';
+    const DATA_URL = 'data/products.json';
     const WA_NUM = '918919359961';
     const VIS = 4; // cards per page on desktop
     // ╚══════════════════════════════════════╝
@@ -3871,13 +3873,12 @@
     function openPosterModal() { }
     function closePosterModal() { }
 
-    /* ── Load from JSONBin ──────────────── */
+    /* ── Load from local JSON (cache-busted) ───────────── */
     async function load() {
       try {
-        const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
-          headers: { 'X-Access-Key': READ_KEY, 'X-Bin-Meta': 'false' }
-        });
-        if (!res.ok) throw new Error(`JSONBin ${res.status}`);
+        const url = `${DATA_URL}?v=${Date.now()}`; // cache buster to avoid stale responses
+        const res = await fetch(url, { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`Data ${res.status}`);
         const d = await res.json();
         if (d.theme && !localStorage.getItem('luvz-theme')) setTheme(d.theme, false);
         renderPoster(d.poster || null);
@@ -3893,7 +3894,7 @@
           if (d[sec] && d[sec].length) buildCarousel(sec, d[sec]);
           else {
             const t = document.getElementById('ct-' + sec);
-            if (t) t.innerHTML = `<p style="font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.2em;color:var(--txt2);opacity:.3;padding:24px;text-align:center">Add products to JSONBin to display here</p>`;
+            if (t) t.innerHTML = `<p style="font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.2em;color:var(--txt2);opacity:.3;padding:24px;text-align:center">Add products to /data/products.json to display here</p>`;
           }
         });
 
@@ -4029,6 +4030,38 @@
     }
 
   </script>
+
+  <!-- <footer class="p-10 text-center">
+    <p>© 2026 LUVZ Collection</p>
+    <a href="/admin/" class="text-xs text-gray-400 hover:underline">Admin Login</a>
+  </footer> -->
+
+  <!-- <footer class="p-10 text-center">
+    <p>© 2026 LUVZ Collection</p>
+    <a id="admin-link" href="/admin/" class="hidden text-xs text-gray-400">Admin Login</a>
+  </footer>
+
+  <script>
+    // Show the link only if the user presses 'L' while holding Ctrl and Alt
+    window.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.altKey && e.key === 'l') {
+        document.getElementById('admin-link').classList.toggle('hidden');
+      }
+    });
+  </script> -->
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
 </body>
 
 </html>
