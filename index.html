@@ -884,8 +884,11 @@
       animation: catScroll 32s linear infinite;
     }
 
-    .cat-carousel-track:hover {
-      animation-play-state: paused
+    /* Pause on hover only for real hover devices (prevents mobile tap-stuck hover) */
+    @media (hover:hover) and (pointer:fine) {
+      .cat-carousel-track:hover {
+        animation-play-state: paused
+      }
     }
 
     @keyframes catScroll {
@@ -948,11 +951,13 @@
       }
     }
 
-    .cat-tile:hover {
-      border-color: var(--border-h);
-      transform: translateY(-10px) scale(1.03) !important;
-      box-shadow: var(--sh-h);
-      animation-play-state: paused
+    @media (hover:hover) and (pointer:fine) {
+      .cat-tile:hover {
+        border-color: var(--border-h);
+        transform: translateY(-10px) scale(1.03) !important;
+        box-shadow: var(--sh-h);
+        animation-play-state: paused
+      }
     }
 
     @media(max-width:768px) {
