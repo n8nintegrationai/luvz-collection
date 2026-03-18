@@ -3979,7 +3979,18 @@
     /* ── Load from local JSON (cache-busted) ───────────── */
     async function load() {
       try {
-        const url = `${DATA_URL}?v=${Date.now()}`;
+        let url = DATA_URL;
+        try {
+          const commitRes = await fetch('https://api.github.com/repos/n8nintegrationai/luvz-collection/commits/main', { cache: 'no-cache' });
+          if (!commitRes.ok) throw new Error(`Commit ${commitRes.status}`);
+          const commitData = await commitRes.json();
+          const sha = commitData.sha;
+          if (!sha) throw new Error('Missing commit SHA');
+          url = `https://cdn.jsdelivr.net/gh/n8nintegrationai/luvz-collection@${sha}/data/products.json`;
+        } catch (err) {
+          url = `https://cdn.jsdelivr.net/gh/n8nintegrationai/luvz-collection@main/data/products.json?v=${Date.now()}`;
+        }
+
         const res = await fetch(url, { cache: 'no-cache' });
         if (!res.ok) throw new Error(`Data ${res.status}`);
         const d = await res.json();
