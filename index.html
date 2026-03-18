@@ -3979,6 +3979,7 @@
     /* ── Load from local JSON (cache-busted) ───────────── */
     async function load() {
       try {
+        //  const url = `${DATA_URL}?v=${Date.now()}`;
         let url = DATA_URL;
         try {
           const commitRes = await fetch('https://api.github.com/repos/n8nintegrationai/luvz-collection/commits/main', { cache: 'no-cache' });
