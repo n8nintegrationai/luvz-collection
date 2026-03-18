@@ -10,6 +10,14 @@ backend:
   name: git-gateway
   repo: n8nintegrationai/luvz-collection
   branch: main
+  # --- ADD THESE LINES STARTING HERE ---
+  commit_messages:
+    create: 'CMS: Create {{collection}} [skip ci]'
+    update: 'CMS: Update {{collection}} [skip ci]'
+    delete: 'CMS: Delete {{collection}} [skip ci]'
+    uploadMedia: 'CMS: Upload {{path}} [skip ci]'
+    deleteMedia: 'CMS: Delete {{path}} [skip ci]'
+  # --- END OF ADDED LINES ---
 
 media_folder: "images"
 public_folder: "/images"
