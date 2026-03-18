@@ -20,9 +20,6 @@
   <meta name="keywords"
     content="92.5 silver jewelry, 22K gold polish jewelry, handcrafted Indian jewellery, silver necklace, silver jhumka, silver bangles, temple jewelry, South Indian jewellery, LUVZ Collection" />
   <meta name="robots" content="index, follow" />
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://identity.netlify.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://api.github.com https://cdn.jsdelivr.net https://identity.netlify.com https://www.googletagmanager.com; frame-src https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" />
-
   <!-- Open Graph – for WhatsApp & Instagram link previews -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="LUVZ Collection | 92.5 Silver Jewelry with 22K Gold Polish" />
@@ -3980,7 +3977,6 @@
     /* ── Load from local JSON (cache-busted) ───────────── */
     async function load() {
       try {
-        //  const url = `${DATA_URL}?v=${Date.now()}`;
         let url = DATA_URL;
         try {
           const commitRes = await fetch('https://api.github.com/repos/n8nintegrationai/luvz-collection/commits/main', { cache: 'no-cache' });
