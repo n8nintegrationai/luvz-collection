@@ -1,4 +1,17 @@
 {
+  "heritage": {
+    "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773263394/1_lhmo8e.jpg",
+    "title": "The Art of<br/>92.5 Silver",
+    "body": "Every LUVZ piece begins as raw 92.5 sterling silver...",
+    "cta_text": "Explore the Collection →",
+    "cta_href": "#categories"
+  },
+  "about": {
+    "image": "https://res.cloudinary.com/ddtlwlbgg/image/upload/v1773436168/5_qfql95.jpg",
+    "title": "Born from<br/>a Love for<br/>Tradition",
+    "body1": "LUVZ Collection is a small, passionate jewellery boutique...",
+    "body2": "We believe jewellery should carry meaning..."
+  },
   "bangles": [
     {
       "id": "bg1",
